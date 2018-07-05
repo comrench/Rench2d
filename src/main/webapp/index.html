@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/rench2d.css">
+</head>
+<body>
+<div class="grid">
+    <header>
+        Header
+    </header>
+
+    <aside class="sidebar-left">
+        Left Sidebar
+    </aside>
+
+    <article>
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5"/>
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)"/>
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1"/>
+                </pattern>
+            </defs>
+
+            <rect width="100%" height="100%" fill="url(#grid)" />
+            <polygon points="220,10 300,210 170,250 123,234" style="fill:lime;stroke:black;stroke-width:1" />
+            <line x1="220" y1="10" x2="170" y2="250" style="stroke:gray;stroke-width:1" />
+        </svg>
+    </article>
+
+    <aside class="sidebar-right">
+        Right Sidebar
+    </aside>
+
+    <footer>
+        Footer
+    </footer>
+</div>
+</body>
+</html>
